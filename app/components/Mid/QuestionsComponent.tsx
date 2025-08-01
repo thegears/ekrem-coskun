@@ -2,7 +2,10 @@ import { Card, Group, Text, Badge } from "@mantine/core";
 
 export default function QuestionsComponent() {
   return (
-    <div className="flex justify-center my-8 gap-4 p-4">
+    <div
+      id="sorular"
+      className="flex justify-center flex-col md:flex-row my-8 gap-4  p-4"
+    >
       <Card shadow="sm" padding="lg" radius="xl" withBorder>
         <Group justify="space-between" mt="md" mb="xs">
           <Text fw={500}>Biz Kimiz?</Text>

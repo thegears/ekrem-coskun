@@ -2,8 +2,11 @@ import { Card, Group, Text, Badge, Image, Avatar } from "@mantine/core";
 
 export default function FeaturesComponent() {
   return (
-    <div className="flex justify-center my-8 gap-4 p-4">
-      <Card shadow="xl" className="w-1/3" padding="lg" radius="md">
+    <div
+      id="ozellikler"
+      className="flex justify-center my-8 gap-4 flex-col md:flex-row p-4"
+    >
+      <Card className="w-full md:w-1/3" shadow="xl" padding="lg" radius="md">
         <Card.Section className="p-4">
           <Avatar src="hijyen.png"></Avatar>
         </Card.Section>
@@ -24,7 +27,7 @@ export default function FeaturesComponent() {
         </Text>
       </Card>
 
-      <Card shadow="xl" className="w-1/3" padding="lg" radius="md">
+      <Card shadow="xl" className="w-full md:w-1/3" padding="lg" radius="md">
         <Card.Section className="p-4">
           <Avatar src="lezzet.png"></Avatar>
         </Card.Section>
@@ -46,7 +49,7 @@ export default function FeaturesComponent() {
         </Text>
       </Card>
 
-      <Card shadow="xl" className="w-1/3" padding="lg" radius="md">
+      <Card shadow="xl" className="w-full md:w-1/3" padding="lg" radius="md">
         <Card.Section className="p-4">
           <Avatar src="ucuz.png"></Avatar>
         </Card.Section>

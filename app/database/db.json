@@ -1,0 +1,23 @@
+{
+  "adminPassword": "qwe",
+  "products": [
+    {
+      "category": "tost",
+      "name": "Kaşarlı Tost",
+      "price": "30",
+      "image": "/kasarli-tost.webp"
+    },
+    {
+      "category": "tost",
+      "name": "Karışık Tost",
+      "price": "50",
+      "image": "/karisik-tost.jpeg"
+    },
+    {
+      "category": "tost",
+      "name": "Acılı Karışık Tost",
+      "price": "60",
+      "image": "/karisik-tost.jpeg"
+    }
+  ]
+}

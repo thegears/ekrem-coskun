@@ -1,24 +1,31 @@
 import { Carousel } from "@mantine/carousel";
+import { Image } from "@mantine/core";
+import Autoplay from "embla-carousel-autoplay";
+import { useRef } from "react";
 
 export default function CarouselComponent() {
+  const autoplay = useRef(Autoplay({ delay: 1500, stopOnInteraction: true }));
+
   return (
     <Carousel
-      className="shadow-xl p-4"
-      slideSize="40%"
+      className="p-4"
+      slideSize="50%"
       slideGap="xs"
-      controlsOffset="xl"
-      controlSize={36}
-      withControls={true}
-      withIndicators
+      withControls={false}
       emblaOptions={{
         loop: true,
         dragFree: true,
         align: "center",
       }}
+      plugins={[autoplay.current]}
+      onTouchStart={() => autoplay.current.stop()}
+      onTouchEnd={() => autoplay.current.play()}
+      onMouseEnter={autoplay.current.stop}
+      onMouseLeave={() => autoplay.current.play()}
     >
       <Carousel.Slide>
-        <img
-          src="public/image1.jpeg"
+        <Image
+          src="/image1.jpeg"
           alt=""
           style={{
             width: "100%",
@@ -28,8 +35,8 @@ export default function CarouselComponent() {
         />
       </Carousel.Slide>
       <Carousel.Slide>
-        <img
-          src="public/image2.jpeg"
+        <Image
+          src="/image2.jpeg"
           alt=""
           style={{
             width: "100%",
@@ -39,8 +46,8 @@ export default function CarouselComponent() {
         />
       </Carousel.Slide>
       <Carousel.Slide>
-        <img
-          src="public/image3.jpeg"
+        <Image
+          src="/image3.jpeg"
           alt=""
           style={{
             width: "100%",
@@ -50,8 +57,8 @@ export default function CarouselComponent() {
         />
       </Carousel.Slide>
       <Carousel.Slide>
-        <img
-          src="public/image4.jpeg"
+        <Image
+          src="/image4.jpeg"
           alt=""
           style={{
             width: "100%",
@@ -61,8 +68,8 @@ export default function CarouselComponent() {
         />
       </Carousel.Slide>
       <Carousel.Slide>
-        <img
-          src="public/image5.jpeg"
+        <Image
+          src="/image5.jpeg"
           alt=""
           style={{
             width: "100%",
