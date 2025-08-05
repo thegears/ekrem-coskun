@@ -10,7 +10,7 @@ export default function AdminEditProducts() {
     products.map((item) => (
       <Accordion.Item key={item.name} value={item.name}>
         <Accordion.Control>{item.name}</Accordion.Control>
-        <Accordion.Panel>
+        <Accordion.Panel className="border shadow-2xl border-white p-4">
           <Form method="post" className="flex flex-col gap-4">
             <input type="hidden" name="formType" value="editProduct" />
             <input type="hidden" name="name" value={item.name} />
@@ -21,6 +21,7 @@ export default function AdminEditProducts() {
               radius="xs"
               placeholder={item.name}
               name="newName"
+              required
             />
             Fiyat:
             <Input
@@ -28,6 +29,7 @@ export default function AdminEditProducts() {
               radius="xs"
               placeholder={item.price}
               name="newPrice"
+              required
             />
             <Button type="submit" className="mt-4">
               Düzenle
@@ -56,7 +58,7 @@ export default function AdminEditProducts() {
       filteredItems.map((item) => (
         <Accordion.Item key={item.name} value={item.name}>
           <Accordion.Control>{item.name}</Accordion.Control>
-          <Accordion.Panel>
+          <Accordion.Panel className="border shadow-2xl border-white p-4">
             <Form method="post" className="flex flex-col gap-4">
               <input type="hidden" name="formType" value="editProduct" />
               <input type="hidden" name="name" value={item.name} />
@@ -67,6 +69,7 @@ export default function AdminEditProducts() {
                 radius="xs"
                 placeholder={item.name}
                 name="newName"
+                required
               />
               Fiyat:
               <Input
@@ -74,6 +77,7 @@ export default function AdminEditProducts() {
                 radius="xs"
                 placeholder={item.price}
                 name="newPrice"
+                required
               />
               <Button type="submit" className="mt-4">
                 Düzenle

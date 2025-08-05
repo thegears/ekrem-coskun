@@ -1,5 +1,6 @@
 import { Avatar, Burger, Button, Menu, Text } from "@mantine/core";
 import { useNavigate } from "react-router";
+import { scroller } from "react-scroll";
 
 export default function Bar() {
   const navigate = useNavigate();
@@ -10,7 +11,7 @@ export default function Bar() {
         className="flex p-1 h-16 justify-between flex-row grow fixed top-3 mx-auto left-0  right-0 justify-center items-center text-2xl shadow-2xl font-semibold w-11/12 rounded-4xl z-50"
       >
         <div
-          onClick={() => navigate("/")}
+          onClick={() => scroller.scrollTo("home", { smooth: true })}
           className="flex  grow items-center w-full cursor-pointer"
         >
           <Avatar src="favicon.ico" size="lg" radius={"xl"} />
@@ -21,28 +22,28 @@ export default function Bar() {
         <div className="invisible w-full md:visible">
           <Button
             color="black"
-            onClick={() => navigate("#sorular")}
+            onClick={() => scroller.scrollTo("sorular", { smooth: true })}
             variant="subtle"
           >
             Sorular
           </Button>
           <Button
             color="black"
-            onClick={() => navigate("#ozellikler")}
+            onClick={() => scroller.scrollTo("ozellikler", { smooth: true })}
             variant="subtle"
           >
             Özellikler
           </Button>
           <Button
             color="black"
-            onClick={() => navigate("#urunler")}
+            onClick={() => scroller.scrollTo("urunler", { smooth: true })}
             variant="subtle"
           >
             Ürünler
           </Button>
           <Button
             color="black"
-            onClick={() => navigate("#iletisim")}
+            onClick={() => scroller.scrollTo("iletisim", { smooth: true })}
             variant="subtle"
           >
             İletişim
@@ -62,16 +63,26 @@ export default function Bar() {
             </Menu.Target>
 
             <Menu.Dropdown>
-              <Menu.Item onClick={() => navigate("#sorular")}>
+              <Menu.Item
+                onClick={() => scroller.scrollTo("sorular", { smooth: true })}
+              >
                 Sorular
               </Menu.Item>
-              <Menu.Item onClick={() => navigate("#ozellikler")}>
+              <Menu.Item
+                onClick={() =>
+                  scroller.scrollTo("ozellikler", { smooth: true })
+                }
+              >
                 Özellikler
               </Menu.Item>
-              <Menu.Item onClick={() => navigate("#urunler")}>
+              <Menu.Item
+                onClick={() => scroller.scrollTo("urunler", { smooth: true })}
+              >
                 Ürünler
               </Menu.Item>
-              <Menu.Item onClick={() => navigate("#iletisim")}>
+              <Menu.Item
+                onClick={() => scroller.scrollTo("iletisim", { smooth: true })}
+              >
                 İletişim
               </Menu.Item>
               <Menu.Item onClick={() => navigate("/menu")}>Menü</Menu.Item>

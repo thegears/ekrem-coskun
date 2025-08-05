@@ -1,6 +1,9 @@
 import { Card, Group, Text, Badge, Image } from "@mantine/core";
+import { useNavigate } from "react-router";
 
 export default function ProductsComponent() {
+  const navigate = useNavigate();
+
   return (
     <div
       id="urunler"
@@ -12,6 +15,7 @@ export default function ProductsComponent() {
         padding="lg"
         radius="md"
         withBorder
+        onClick={() => navigate("/menu")}
       >
         <Card.Section>
           <Image src="/tavukdoner.jpg" height={160} alt="Norway" />
@@ -33,6 +37,7 @@ export default function ProductsComponent() {
         padding="lg"
         radius="md"
         withBorder
+        onClick={() => navigate("/menu")}
       >
         <Card.Section>
           <Image src="etdoner.jpg" height={160} alt="Norway" />
@@ -54,6 +59,7 @@ export default function ProductsComponent() {
         padding="lg"
         radius="md"
         withBorder
+        onClick={() => navigate("/menu")}
       >
         <Card.Section>
           <Image src="iskender.jpg" height={160} alt="Norway" />

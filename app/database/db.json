@@ -1,10 +1,16 @@
 {
-  "adminPassword": "qwe",
+  "adminPassword": "123",
   "products": [
     {
       "category": "tost",
       "name": "Kaşarlı Tost",
       "price": "30",
+      "image": "/kasarli-tost.webp"
+    },
+    {
+      "category": "tost",
+      "name": "Kaşarlı Tost + İçecek",
+      "price": "55",
       "image": "/kasarli-tost.webp"
     },
     {
@@ -15,9 +21,381 @@
     },
     {
       "category": "tost",
+      "name": "Karışık Tost + İçecek",
+      "price": "75",
+      "image": "/karisik-tost.jpeg"
+    },
+    {
+      "category": "tost",
       "name": "Acılı Karışık Tost",
       "price": "60",
       "image": "/karisik-tost.jpeg"
+    },
+    {
+      "category": "kilo-ile-doner",
+      "name": "Tavuk Döner 250 GR",
+      "price": "210",
+      "image": "/kilo-ile-tavuk.jpeg"
+    },
+    {
+      "category": "kilo-ile-doner",
+      "name": "Tavuk Döner 500 GR",
+      "price": "420",
+      "image": "/kilo-ile-tavuk.jpeg"
+    },
+    {
+      "category": "kilo-ile-doner",
+      "name": "Tavuk Döner 750 GR",
+      "price": "630",
+      "image": "/kilo-ile-tavuk.jpeg"
+    },
+    {
+      "category": "kilo-ile-doner",
+      "name": "Tavuk Döner 1000 GR",
+      "price": "800",
+      "image": "/kilo-ile-tavuk.jpeg"
+    },
+    {
+      "category": "kilo-ile-doner",
+      "name": "Et Döner 250 GR",
+      "price": "500",
+      "image": "/kilo-ile-et.jpeg"
+    },
+    {
+      "category": "kilo-ile-doner",
+      "name": "Et Döner 500 GR",
+      "price": "1000",
+      "image": "/kilo-ile-et.jpeg"
+    },
+    {
+      "category": "kilo-ile-doner",
+      "name": "Et Döner 750 GR",
+      "price": "1500",
+      "image": "/kilo-ile-et.jpeg"
+    },
+    {
+      "category": "kilo-ile-doner",
+      "name": "Et Döner 1000 GR",
+      "price": "2000",
+      "image": "/kilo-ile-et.jpeg"
+    },
+    {
+      "category": "icecekler",
+      "name": "Çay",
+      "price": "5",
+      "image": "/cay.jpeg"
+    },
+    {
+      "category": "icecekler",
+      "name": "0.5 LT Su",
+      "price": "10",
+      "image": "/su-05lt.jpeg"
+    },
+    {
+      "category": "icecekler",
+      "name": "0.5 LT İki Adet Su",
+      "price": "15",
+      "image": "/su-05lt.jpeg"
+    },
+    {
+      "category": "icecekler",
+      "name": "Eker Ayran",
+      "price": "25",
+      "image": "/eker-ayran.jpeg"
+    },
+    {
+      "category": "icecekler",
+      "name": "Ice Tea",
+      "price": "30",
+      "image": "/icetea.jpeg"
+    },
+    {
+      "category": "icecekler",
+      "name": "Şalgam Suyu",
+      "price": "30",
+      "image": "/salgam.jpeg"
+    },
+    {
+      "category": "icecekler",
+      "name": "Maden Suyu",
+      "price": "15",
+      "image": "/madensuyu.jpeg"
+    },
+    {
+      "category": "icecekler",
+      "name": "Limonata",
+      "price": "30",
+      "image": "/limonata.jpeg"
+    },
+    {
+      "category": "icecekler",
+      "name": "Kutu Meyve Suyu",
+      "price": "30",
+      "image": "/meyvesuyu.jpeg"
+    },
+    {
+      "category": "icecekler",
+      "name": "Pepsi & Pepsi Max",
+      "price": "30",
+      "image": "/pepsi.jpeg"
+    },
+    {
+      "category": "icecekler",
+      "name": "Yedigün ",
+      "price": "30",
+      "image": "/yedigun.jpeg"
+    },
+    {
+      "category": "icecekler",
+      "name": "Fruko ",
+      "price": "30",
+      "image": "/fruko.jpeg"
+    },
+    {
+      "category": "dondurma",
+      "name": "Porsiyon Dondurma (3 Top)",
+      "price": "75",
+      "image": "/dondurma-3top.jpeg"
+    },
+    {
+      "category": "dondurma",
+      "name": "Kağıt Helva",
+      "price": "20",
+      "image": "/kagit-helva.jpeg"
+    },
+    {
+      "category": "dondurma",
+      "name": "Kornet",
+      "price": "5",
+      "image": "/kornet.jpeg"
+    },
+    {
+      "category": "dondurma",
+      "name": "Strafor Kuru Buz",
+      "price": "75",
+      "image": "/strafor.jpeg"
+    },
+    {
+      "category": "dondurma",
+      "name": "Top Dondurma - Gaymaklı",
+      "price": "10",
+      "image": "/dondurma-gaymakli.jpeg"
+    },
+    {
+      "category": "dondurma",
+      "name": "Top Dondurma - Çikolatalı",
+      "price": "15",
+      "image": "/dondurma-cikolata.jpeg"
+    },
+    {
+      "category": "dondurma",
+      "name": "Top Dondurma - Limonlu",
+      "price": "15",
+      "image": "/dondurma-limon.jpeg"
+    },
+    {
+      "category": "dondurma",
+      "name": "Top Dondurma - Kavunlu",
+      "price": "15",
+      "image": "/dondurma-kavun.jpeg"
+    },
+    {
+      "category": "dondurma",
+      "name": "Top Dondurma - Çilekli",
+      "price": "20",
+      "image": "/dondurma-cilek.jpeg"
+    },
+    {
+      "category": "ekmek-arasi-lavas",
+      "name": "Hesaplı Tavuk Döner (50 GR)",
+      "price": "70",
+      "image": "/hesapli-tavuk-doner.jpeg"
+    },
+    {
+      "category": "ekmek-arasi-lavas",
+      "name": "Ekonomik Tavuk Döner (70 GR)",
+      "price": "80",
+      "image": "/hesapli-tavuk-doner.jpeg"
+    },
+    {
+      "category": "ekmek-arasi-lavas",
+      "name": "İçibol Tavuk Döner (90 GR)",
+      "price": "90",
+      "image": "/hesapli-tavuk-doner.jpeg"
+    },
+    {
+      "category": "ekmek-arasi-lavas",
+      "name": "Duble Tavuk Döner (120 GR)",
+      "price": "120",
+      "image": "/hesapli-tavuk-doner.jpeg"
+    },
+    {
+      "category": "ekmek-arasi-lavas",
+      "name": "Ultra Tavuk Döner (200 GR)",
+      "price": "180",
+      "image": "/hesapli-tavuk-doner.jpeg"
+    },
+    {
+      "category": "ekmek-arasi-lavas",
+      "name": "Soslu Tavuk Döner (Lavaş - 100 GR)",
+      "price": "140",
+      "image": "/lavas-tavuk.jpeg"
+    },
+    {
+      "category": "ekmek-arasi-lavas",
+      "name": "Hesaplı Et Döner (50 GR)",
+      "price": "120",
+      "image": "/hesapli-et-doner.jpeg"
+    },
+    {
+      "category": "ekmek-arasi-lavas",
+      "name": "Ekonomik Et Döner (70 GR)",
+      "price": "150",
+      "image": "/hesapli-et-doner.jpeg"
+    },
+    {
+      "category": "ekmek-arasi-lavas",
+      "name": "İçibol Et Döner (90 GR)",
+      "price": "190",
+      "image": "/hesapli-et-doner.jpeg"
+    },
+    {
+      "category": "ekmek-arasi-lavas",
+      "name": "Duble Et Döner (120 GR)",
+      "price": "275",
+      "image": "/hesapli-et-doner.jpeg"
+    },
+    {
+      "category": "ekmek-arasi-lavas",
+      "name": "Doyuran Et Döner (150 GR)",
+      "price": "330",
+      "image": "/hesapli-et-doner.jpeg"
+    },
+    {
+      "category": "ekmek-arasi-lavas",
+      "name": "Ultra Et Döner (200 GR)",
+      "price": "425",
+      "image": "/hesapli-et-doner.jpeg"
+    },
+    {
+      "category": "iskender-menu",
+      "name": "Tek Et İskender Menü",
+      "price": "300",
+      "image": "/iskender-menusu.jpeg"
+    },
+    {
+      "category": "iskender-menu",
+      "name": "1,5 Et İskender Menü",
+      "price": "400",
+      "image": "/iskender-menusu.jpeg"
+    },
+    {
+      "category": "iskender-menu",
+      "name": "Duble Et İskender Menü",
+      "price": "500",
+      "image": "/iskender-menusu.jpeg"
+    },
+    {
+      "category": "iskender-menu",
+      "name": "Tek Tavuklu İskender Menü",
+      "price": "200",
+      "image": "/tek-tavuk-iskender.jpeg"
+    },
+    {
+      "category": "iskender-menu",
+      "name": "1,5 Tavuklu İskender Menü",
+      "price": "250",
+      "image": "/tek-tavuk-iskender.jpeg"
+    },
+    {
+      "category": "iskender-menu",
+      "name": "Duble Tavuklu İskender Menü",
+      "price": "300",
+      "image": "/tek-tavuk-iskender.jpeg"
+    },
+    {
+      "category": "pilav-ustu",
+      "name": "Hesaplı Pilav Üstü Tavuk Döner (50 GR)",
+      "price": "120",
+      "image": "/hesapli-pilav-tavuk.jpeg"
+    },
+    {
+      "category": "pilav-ustu",
+      "name": "Ekonomik Pilav Üstü Tavuk Döner (70 GR)",
+      "price": "130",
+      "image": "/hesapli-pilav-tavuk.jpeg"
+    },
+    {
+      "category": "pilav-ustu",
+      "name": "İçibol Pilav Üstü Tavuk Döner (90 GR)",
+      "price": "140",
+      "image": "/hesapli-pilav-tavuk.jpeg"
+    },
+    {
+      "category": "pilav-ustu",
+      "name": "Duble Pilav Üstü Tavuk Döner (120 GR)",
+      "price": "165",
+      "image": "/hesapli-pilav-tavuk.jpeg"
+    },
+    {
+      "category": "pilav-ustu",
+      "name": "Doyuran Pilav Üstü Tavuk Döner (150 GR)",
+      "price": "195",
+      "image": "/hesapli-pilav-tavuk.jpeg"
+    },
+    {
+      "category": "pilav-ustu",
+      "name": "Ultra Pilav Üstü Tavuk Döner (200 GR)",
+      "price": "225",
+      "image": "/hesapli-pilav-tavuk.jpeg"
+    },
+    {
+      "category": "pilav-ustu",
+      "name": "Hesaplı Pilav Üstü Et Döner (50 GR)",
+      "price": "160",
+      "image": "/hesapli-pilav-et.jpeg"
+    },
+    {
+      "category": "pilav-ustu",
+      "name": "Ekonomik Pilav Üstü Et Döner (70 GR)",
+      "price": "235",
+      "image": "/hesapli-pilav-et.jpeg"
+    },
+    {
+      "category": "pilav-ustu",
+      "name": "İçibol Pilav Üstü Et Döner (90 GR)",
+      "price": "270",
+      "image": "/hesapli-pilav-et.jpeg"
+    },
+    {
+      "category": "pilav-ustu",
+      "name": "Duble Pilav Üstü Et Döner (120 GR)",
+      "price": "320",
+      "image": "/hesapli-pilav-et.jpeg"
+    },
+    {
+      "category": "pilav-ustu",
+      "name": "Doyuran Pilav Üstü Et Döner (150 GR)",
+      "price": "375",
+      "image": "/hesapli-pilav-et.jpeg"
+    },
+    {
+      "category": "pilav-ustu",
+      "name": "Ultra Pilav Üstü Et Döner (200 GR)",
+      "price": "470",
+      "image": "/hesapli-pilav-et.jpeg"
+    },
+    {
+      "category": "pilav-ustu",
+      "name": "Pilav",
+      "price": "50",
+      "image": "/pilav.jpeg"
+    },
+    {
+      "category": "pilav-ustu",
+      "name": "Patates Kızartması",
+      "price": "50",
+      "image": "/patates.jpeg"
     }
   ]
 }

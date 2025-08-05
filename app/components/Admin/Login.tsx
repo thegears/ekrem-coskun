@@ -8,6 +8,7 @@ export default function Login() {
       <h1 className="text-3xl font-bold mb-4">Yönetici Girişi</h1>
       <Form method="post">
         <input type="hidden" name="formType" value="login" />
+        <input type="hidden" name="qWeWeQwE" value="aSaSsA" />
         <div className="flex flex-col w-80">
           <Input
             type="text"

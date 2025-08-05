@@ -40,6 +40,23 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Links />
       </head>
       <body>
+        <div
+          style={{
+            backgroundImage: "url('/bg.svg')",
+            backgroundRepeat: "no-repeat",
+            backgroundSize: "cover",
+            height: "100vh",
+            zIndex: -1,
+            position: "fixed",
+            top: 0,
+            left: 0,
+            right: 0,
+            bottom: 0,
+            opacity: 0.22,
+          }}
+        >
+          {/* İçerik */}
+        </div>
         <MantineProvider>{children}</MantineProvider>
         <ScrollRestoration />
         <Scripts />

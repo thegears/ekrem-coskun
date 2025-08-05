@@ -94,13 +94,11 @@ export default function Admin() {
   const actionData = useActionData();
   return (
     <>
-      {/* {actionData?.formType === "login" && actionData?.success ? (
+      {actionData?.formType === "login" && actionData?.success ? (
         <Panel />
       ) : (
         <Login />
       )}
-        */}
-      <Panel />
     </>
   );
 }

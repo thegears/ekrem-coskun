@@ -13,13 +13,13 @@ export default function QuestionsComponent() {
         </Group>
 
         <Text size="sm" c="dimmed">
-          Kâr marjımızı düşük tutarak, günlük kg satışımızda ciddi anlamda artış
-          gerçekleştirdik. Bu hamlemiz ile dönerdeki fire oranının azalmasıyla,
-          ekmek arası et dönerimizi her bütçeye uygun hale getirmiş olduk. ‘’Az
-          kazanalım, sürümden kazanalım’’ dedik ve günlük belirli bir âdete
-          ulaşınca; ‘’Bu fiyata et döner mi olur’’ algısını da yenmiş olduk.
-          Ayrıca, insanların hayatlarına devam edebilmeleri için barınma ve yeme
-          içmeye ihtiyacı bulunmaktadır.
+          Kâr marjımızı düşük tutarak, günlük kilogram satışımızda ciddi anlamda
+          artış gerçekleştirdik. Bu hamlemiz ile dönerdeki fire oranının
+          azalmasıyla, ekmek arası et dönerimizi her bütçeye uygun hale getirmiş
+          olduk. ‘’Az kazanalım, sürümden kazanalım’’ dedik ve günlük belirli
+          bir âdete ulaşınca; ‘’Bu fiyata et döner mi olur’’ algısını da yenmiş
+          olduk. Ayrıca, insanların hayatlarına devam edebilmeleri için barınma
+          ve yeme içmeye ihtiyacı bulunmaktadır.
         </Text>
       </Card>
       <Card shadow="sm" padding="lg" radius="xl" withBorder>

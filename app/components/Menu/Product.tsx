@@ -1,4 +1,4 @@
-import { Card, Image, Text, Badge, Button, Group } from "@mantine/core";
+import { Card, Image, Text, Badge, Group, Divider } from "@mantine/core";
 
 export default function Product(props: {
   name?: string;
@@ -6,9 +6,9 @@ export default function Product(props: {
   image?: string;
 }) {
   return (
-    <Card shadow="sm" padding="lg" radius="md" withBorder>
+    <Card shadow="xl" padding="md" radius="xl" withBorder>
       <Card.Section>
-        <img src={props.image} height={160} alt="Norway" />
+        <Image src={props.image} height={160} alt="Norway" />
       </Card.Section>
 
       <Group justify="space-between" mt="md" mb="xs">
