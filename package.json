@@ -15,6 +15,7 @@
     "@react-router/node": "^7.7.1",
     "@react-router/serve": "^7.7.1",
     "@types/react-scroll": "^1.8.10",
+    "@vercel/react-router": "^1.2.3",
     "embla-carousel": "^8.5.2",
     "embla-carousel-autoplay": "^8.5.2",
     "embla-carousel-react": "^8.5.2",
