@@ -1,5 +1,6 @@
 {
   "adminPassword": "123",
+  "onoff": true,
   "products": [
     {
       "category": "tost",

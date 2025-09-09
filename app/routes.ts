@@ -5,4 +5,5 @@ export default [
   route("menu", "routes/menu/menu.tsx"),
   route("menu/:category", "routes/menu/menu-category.tsx"),
   route("admin", "routes/admin.tsx"),
+  route("security/", "routes/security.tsx"),
 ] satisfies RouteConfig;

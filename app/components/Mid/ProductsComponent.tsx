@@ -76,6 +76,30 @@ export default function ProductsComponent() {
           kalitesini sunuyoruz...
         </Text>
       </Card>
+
+      <Card
+        className="w-full md:w-1/3"
+        shadow="sm"
+        padding="lg"
+        radius="md"
+        withBorder
+        onClick={() => navigate("/menu")}
+      >
+        <Card.Section>
+          <Image src="tost.jpg" height={160} alt="Norway" />
+        </Card.Section>
+
+        <Group justify="space-between" mt="md" mb="xs">
+          <Text fw={500}>Tost</Text>
+          <Badge color="green">Ürün</Badge>
+        </Group>
+
+        <Text size="sm" c="dimmed">
+          Sağlığınız bizim için her şeyden önemli. Geleneksel lezzeti en doğal
+          haliyle sunuyor, tostumuzu en kaliteli malzemelerle özenle
+          hazırlıyoruz.
+        </Text>
+      </Card>
     </div>
   );
 }

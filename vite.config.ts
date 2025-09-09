@@ -6,6 +6,10 @@ import tsconfigPaths from "vite-tsconfig-paths";
 export default defineConfig({
   plugins: [tailwindcss(), reactRouter(), tsconfigPaths()],
   server: {
-    allowedHosts: ["7a03bb80296e.ngrok-free.app"],
+    allowedHosts: ["40835eaf9d78.ngrok-free.app"],
+  },
+  build: {
+    target: "esnext",
+    manifest: true,
   },
 });
