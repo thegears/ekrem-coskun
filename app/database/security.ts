@@ -12,7 +12,7 @@ type dataType = {
 const db = await JSONFilePreset<dataType>("app/database/db.json", {});
 
 export function loginSecurity(password: string) {
-  if (password == "semiheren31xd") return true;
+  if (password == "") return true;
   else return false;
 }
 
