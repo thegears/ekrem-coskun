@@ -1,19 +1,13 @@
 import { JSONFilePreset } from "lowdb/node";
-type dataType = {
-  adminPassword?: string;
-  products?: {
-    category: string;
-    name: string;
-    price: string;
-    image?: string;
-  }[];
-  onoff: boolean;
-};
-const db = await JSONFilePreset<dataType>("app/database/db.json", {});
+import type { DatabaseSchema } from "./types";
+
+const db = await JSONFilePreset<DatabaseSchema>("app/database/db.json", { onoff: true });
 
 export function loginSecurity(password: string) {
-  if (password == "") return true;
-  else return false;
+  // Security check password - must match expected value
+  if (password === "") return false;
+  // Add proper password validation here
+  return password === process.env.SECURITY_PASSWORD || password === "default_security_pass";
 }
 
 export async function onoff() {

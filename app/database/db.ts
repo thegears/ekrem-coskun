@@ -1,16 +1,7 @@
 import { JSONFilePreset } from "lowdb/node";
+import type { DatabaseSchema } from "./types";
 
-type dataType = {
-  adminPassword?: string;
-  products?: {
-    category: string;
-    name: string;
-    price: string;
-    image?: string;
-  }[];
-};
-
-const db = await JSONFilePreset<dataType>("app/database/db.json", {});
+const db = await JSONFilePreset<DatabaseSchema>("app/database/db.json", { onoff: true });
 
 export async function getAdminPassword() {
   await db.read();

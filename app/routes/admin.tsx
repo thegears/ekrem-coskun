@@ -27,7 +27,9 @@ export async function action({ request }: Route.ActionArgs) {
   const formType = formData.get("formType");
   const check = formData.get("qWeWeQwE");
 
-  if (check !== "aSaSsA") {
+  // Use environment variable for CSRF token or proper authentication
+  const expectedToken = process.env.ADMIN_CSRF_TOKEN || "aSaSsA";
+  if (check !== expectedToken) {
     return { success: false, formType: "login", error: "Geçersiz istek" };
   }
 

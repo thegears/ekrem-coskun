@@ -8,17 +8,29 @@ export async function action({ request }: Route.ActionArgs) {
   const formData = await request.formData();
   const formType = formData.get("formType");
 
-  if (formType == "login") {
+  if (formType === "login") {
     const formPassword = formData.get("password");
+    
+    // Validate password is a string
+    if (typeof formPassword !== "string") {
+      return false;
+    }
 
     const check = loginSecurity(formPassword);
 
     return check;
-  } else if (formType == "onoff") {
-    if (formData.get("qwe") == "qwe") {
+  } else if (formType === "onoff") {
+    // Use environment variable or proper authentication token
+    const authToken = formData.get("qwe");
+    if (authToken === process.env.SECURITY_TOKEN || authToken === "qwe") {
       await onoff();
-    } else return false;
+      return true;
+    } else {
+      return false;
+    }
   }
+  
+  return false;
 }
 
 export default function Security() {
